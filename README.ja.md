@@ -6,6 +6,8 @@ Toby Cubittによる[Emacs undo-tree 0.8.2](https://www.dr-qubit.org/undo-tree.h
 
 [English](README.md) · [操作・設定](docs/USAGE.ja.md) · [移植ノート](docs/PORTING.md)
 
+![Undo Tree for VS Codeの操作デモ](docs/images/example.gif)
+
 ## 主な機能
 
 - Undo後に別の編集をしてもRedo枝を保持し、任意の状態に戻れる履歴。

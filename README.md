@@ -6,6 +6,8 @@ This extension brings the branching history and visualizer of [undo-tree 0.8.2](
 
 [日本語](README.ja.md) · [Usage & settings](docs/USAGE.md) · [Porting notes](docs/PORTING.md)
 
+![Undo Tree for VS Code demo](docs/images/example.gif)
+
 ## Features
 
 - Keep alternate redo branches and restore any retained state.
