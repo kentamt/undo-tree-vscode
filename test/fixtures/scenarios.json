@@ -1,0 +1,25 @@
+[
+  {"name":"branch-selection-and-set","initial":"", "ops":[
+    {"type":"edit","name":"a","text":"A"}, {"type":"edit","name":"b","text":"AB"}, {"type":"edit","name":"c","text":"ABC"},
+    {"type":"undo"}, {"type":"edit","name":"d","text":"ABD"}, {"type":"edit","name":"e","text":"ABDE"},
+    {"type":"set","name":"b"}, {"type":"switch","branch":1}, {"type":"redo"}, {"type":"undo"},
+    {"type":"edit","name":"f","text":"ABF"}, {"type":"set","name":"b"}, {"type":"switch","branch":2},
+    {"type":"redo"}, {"type":"set","name":"e"}, {"type":"set","name":"root"}, {"type":"redo"}, {"type":"redo"}, {"type":"redo"}
+  ]},
+  {"name":"same-text-different-nodes","initial":"same", "ops":[
+    {"type":"edit","name":"a","text":"same!"}, {"type":"edit","name":"b","text":"same"},
+    {"type":"undo"}, {"type":"undo"}, {"type":"edit","name":"c","text":"same?"}, {"type":"edit","name":"d","text":"same?"},
+    {"type":"set","name":"b"}, {"type":"undo"}, {"type":"set","name":"root"}, {"type":"redo"}
+  ]},
+  {"name":"unicode-and-replacement","initial":"日本語🙂\nline\n", "ops":[
+    {"type":"edit","name":"a","text":"日本語🙂\nLINE\n"}, {"type":"edit","name":"b","text":"日本語🌳\nLINE\n"},
+    {"type":"undo"}, {"type":"edit","name":"c","text":"日本語🙂\nLINE\n末尾"},
+    {"type":"set","name":"b"}, {"type":"set","name":"root"}, {"type":"set","name":"c"}
+  ]},
+  {"name":"discard-source-order","initial":"", "ops":[
+    {"type":"edit","name":"a","text":"a"}, {"type":"edit","name":"b","text":"ab"},
+    {"type":"edit","name":"c","text":"abc"}, {"type":"undo"},
+    {"type":"edit","name":"d","text":"abd"}, {"type":"discard","name":"root"},
+    {"type":"discard","name":"c"}, {"type":"discard","name":"d"}, {"type":"set","name":"a"}
+  ]}
+]

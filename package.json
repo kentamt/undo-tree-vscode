@@ -1,0 +1,325 @@
+{
+  "name": "branching-undo-tree",
+  "displayName": "Undo Tree",
+  "description": "A source-based port of Emacs undo-tree 0.8.2 navigation and visualization for VS Code.",
+  "version": "0.4.0",
+  "publisher": "undo-tree-local",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.js",
+    "package": "python3 scripts/package_vsix.py",
+    "package:vsce": "vsce package --allow-missing-repository",
+    "test:oracle": "node --test test/conformance.test.js",
+    "fixtures:emacs": "UPDATE_EMACS_FIXTURES=1 node --test test/conformance.test.js test/text-renderer.test.js"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "undoTree.show",
+        "title": "Undo Tree: Visualize History",
+        "icon": "$(history)"
+      },
+      {
+        "command": "undoTree.undo",
+        "title": "Undo Tree: Undo",
+        "icon": "$(discard)"
+      },
+      {
+        "command": "undoTree.redo",
+        "title": "Undo Tree: Redo",
+        "icon": "$(redo)"
+      },
+      {
+        "command": "undoTree.chooseBranch",
+        "title": "Undo Tree: Switch Branch",
+        "icon": "$(git-branch)"
+      },
+      {
+        "command": "undoTree.restore",
+        "title": "Undo Tree: Restore This State",
+        "icon": "$(history)"
+      },
+      {
+        "command": "undoTree.diff",
+        "title": "Undo Tree: Compare with Current File",
+        "icon": "$(diff)"
+      },
+      {
+        "command": "undoTree.visualize",
+        "title": "Undo Tree: Visualize",
+        "icon": "$(git-branch)"
+      },
+      {
+        "command": "undoTree.showSidebar",
+        "title": "Undo Tree: Show Sidebar",
+        "icon": "$(list-tree)"
+      },
+      {
+        "command": "undoTree.undoBranch",
+        "title": "Undo Tree: Undo to Previous Branch Point",
+        "icon": "$(arrow-up)"
+      },
+      {
+        "command": "undoTree.redoBranch",
+        "title": "Undo Tree: Redo to Next Branch Point",
+        "icon": "$(arrow-down)"
+      },
+      {
+        "command": "undoTree.branchLeft",
+        "title": "Undo Tree: Select Previous Redo Branch",
+        "icon": "$(arrow-left)"
+      },
+      {
+        "command": "undoTree.branchRight",
+        "title": "Undo Tree: Select Next Redo Branch",
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "undoTree.saveState",
+        "title": "Undo Tree: Save State to Register",
+        "icon": "$(bookmark)"
+      },
+      {
+        "command": "undoTree.restoreState",
+        "title": "Undo Tree: Restore State from Register",
+        "icon": "$(bookmark)"
+      },
+      {
+        "command": "undoTree.saveHistory",
+        "title": "Undo Tree: Save History",
+        "icon": "$(save)"
+      },
+      {
+        "command": "undoTree.loadHistory",
+        "title": "Undo Tree: Load History",
+        "icon": "$(folder-open)"
+      },
+      {
+        "command": "undoTree.visualizeText",
+        "title": "Undo Tree: Visualize as Text",
+        "icon": "$(terminal)"
+      },
+      {
+        "command": "undoTree.visualizeEmacs",
+        "title": "Undo Tree: Visualize with Emacs Keys",
+        "icon": "$(keyboard)"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "title": "Undo Tree: Navigate Visualizer"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "undoTree.history",
+          "name": "Undo Tree"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "undoTree.visualize",
+          "when": "view == undoTree.history",
+          "group": "navigation"
+        },
+        {
+          "command": "undoTree.undo",
+          "when": "view == undoTree.history",
+          "group": "navigation"
+        },
+        {
+          "command": "undoTree.redo",
+          "when": "view == undoTree.history",
+          "group": "navigation"
+        },
+        {
+          "command": "undoTree.chooseBranch",
+          "when": "view == undoTree.history",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "undoTree.restore",
+          "when": "view == undoTree.history && viewItem == undoTree.state",
+          "group": "inline"
+        },
+        {
+          "command": "undoTree.diff",
+          "when": "view == undoTree.history && viewItem == undoTree.state",
+          "group": "inline"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "undoTree.visualizerKeyAction",
+          "when": "false"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "undoTree.show",
+        "key": "ctrl+alt+z",
+        "mac": "cmd+alt+z"
+      },
+      {
+        "command": "undoTree.undo",
+        "key": "ctrl+z",
+        "mac": "cmd+z",
+        "when": "editorTextFocus && !editorReadonly && undoTree.tracked && config.undoTree.overrideStandardUndo"
+      },
+      {
+        "command": "undoTree.redo",
+        "key": "ctrl+shift+z",
+        "mac": "cmd+shift+z",
+        "when": "editorTextFocus && !editorReadonly && undoTree.tracked && config.undoTree.overrideStandardUndo"
+      },
+      {
+        "command": "undoTree.redo",
+        "key": "ctrl+y",
+        "when": "editorTextFocus && !editorReadonly && undoTree.tracked && config.undoTree.overrideStandardUndo"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+p",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "up"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+n",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "down"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+b",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "left"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+f",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "right"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+up",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "undoBranch"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+down",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "redoBranch"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "alt+shift+[",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "undoBranch"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "alt+shift+]",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "redoBranch"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+v",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "pageDown"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "alt+v",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "pageUp"
+      },
+      {
+        "command": "undoTree.visualizerKeyAction",
+        "key": "ctrl+q",
+        "when": "activeWebviewPanelId == undoTree.visualizer && undoTree.emacsKeybindings && !inputFocus && !webviewFindWidgetFocused",
+        "args": "abort"
+      }
+    ],
+    "configuration": {
+      "title": "Undo Tree",
+      "properties": {
+        "undoTree.overrideStandardUndo": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use Undo Tree for the standard Undo/Redo keyboard shortcuts in tracked text editors."
+        },
+        "undoTree.groupDelay": {
+          "type": "number",
+          "default": 600,
+          "minimum": 0,
+          "maximum": 10000,
+          "description": "Group consecutive edits within this many milliseconds. Zero records every change."
+        },
+        "undoTree.maxNodes": {
+          "type": "integer",
+          "default": 200,
+          "minimum": 2,
+          "maximum": 2000,
+          "description": "Target maximum number of nodes per document. Source-compatible pruning protects the current state and its last undo step, so this is a soft limit."
+        },
+        "undoTree.maxFileSize": {
+          "type": "integer",
+          "default": 1000000,
+          "minimum": 1000,
+          "description": "Maximum document size in UTF-16 code units to track."
+        },
+        "undoTree.autoSaveHistory": {
+          "type": "boolean",
+          "default": true,
+          "description": "Save and reload file histories in extension storage. Histories are loaded only when the saved content hash matches the document."
+        },
+        "undoTree.visualizerStyle": {
+          "type": "string",
+          "enum": [
+            "graphical",
+            "text"
+          ],
+          "default": "graphical",
+          "enumDescriptions": [
+            "Draw the tree with SVG.",
+            "Display the tree as Emacs-style monospace text."
+          ],
+          "description": "Default visualizer mode. Use the Text button or v in the visualizer to switch the current view."
+        },
+        "undoTree.visualizerKeybindings": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "emacs"
+          ],
+          "default": "standard",
+          "enumDescriptions": [
+            "Use the existing visualizer keys.",
+            "Enable Emacs Control and Meta navigation keys while the tree is focused."
+          ],
+          "description": "Default visualizer keybinding mode. Use the Emacs keys button to switch the current view. Meta is Alt (Option on macOS); Control remains Control on macOS."
+        }
+      }
+    }
+  }
+}

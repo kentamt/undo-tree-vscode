@@ -1,0 +1,2961 @@
+[
+  {
+    "name": "branch-selection-and-set",
+    "traces": [
+      {
+        "text": "",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "root",
+            "parent": null,
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "A",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABC",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABD",
+        "root": "root",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABDE",
+        "root": "root",
+        "current": "e",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABC",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABF",
+        "root": "root",
+        "current": "f",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 2,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABC",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 2,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABDE",
+        "root": "root",
+        "current": "e",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "A",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "AB",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ABD",
+        "root": "root",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "f",
+              "d",
+              "c"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [
+              "e"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "e",
+            "parent": "d",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "f",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "same-text-different-nodes",
+    "traces": [
+      {
+        "text": "same",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "root",
+            "parent": null,
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same!",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same!",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same?",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same?",
+        "root": "root",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "c",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "c",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same!",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "c",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "c",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "same!",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "root",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "c",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "c",
+              "a"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unicode-and-replacement",
+    "traces": [
+      {
+        "text": "日本語🙂\nline\n",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "root",
+            "parent": null,
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🙂\nLINE\n",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🌳\nLINE\n",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🙂\nLINE\n",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🙂\nLINE\n末尾",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "c",
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🌳\nLINE\n",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "c",
+              "b"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🙂\nline\n",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "c",
+              "b"
+            ],
+            "branch": 1,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "日本語🙂\nLINE\n末尾",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "c",
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "discard-source-order",
+    "traces": [
+      {
+        "text": "",
+        "root": "root",
+        "current": "root",
+        "nodes": [
+          {
+            "name": "root",
+            "parent": null,
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "a",
+        "root": "root",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ab",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abc",
+        "root": "root",
+        "current": "c",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ab",
+        "root": "root",
+        "current": "b",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abd",
+        "root": "root",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": "root",
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "root",
+            "parent": null,
+            "children": [
+              "a"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abd",
+        "root": "a",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": null,
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d",
+              "c"
+            ],
+            "branch": 0,
+            "widths": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "c",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abd",
+        "root": "a",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": null,
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "abd",
+        "root": "a",
+        "current": "d",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": null,
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "text": "a",
+        "root": "a",
+        "current": "a",
+        "nodes": [
+          {
+            "name": "a",
+            "parent": null,
+            "children": [
+              "b"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "b",
+            "parent": "a",
+            "children": [
+              "d"
+            ],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "d",
+            "parent": "b",
+            "children": [],
+            "branch": 0,
+            "widths": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

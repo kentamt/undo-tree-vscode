@@ -1,0 +1,21 @@
+Undo Tree for VS Code
+
+The history and visualizer algorithms are translated/adapted from undo-tree 0.8.2:
+  Author: Toby Cubitt
+  Copyright (C) 2009-2021 Free Software Foundation, Inc.
+  License: GNU General Public License, version 3 or later
+  Source: https://gitlab.com/tsc25/undo-tree
+
+The unmodified reference source is in upstream/undo-tree/undo-tree.el.
+The JavaScript port and its host adapters are distributed under GPL-3.0-or-later.
+The original MIT notice for the independently written 0.1.0 prototype is
+retained in LICENSE-MIT. This does not change the GPL terms of the port.
+
+The Emacs conformance runner also uses queue 0.2:
+  Authors: Inge Wallin and Toby Cubitt
+  Copyright (C) 1991-1995, 2008-2009, 2012, 2017 Free Software Foundation, Inc.
+  License: GNU General Public License, version 3 or later
+  Reference source: upstream/undo-tree/queue.el
+
+See LICENSE for the complete GPL license, and docs/PORTING.md for the mapping
+from original Emacs functions to ported functions and remaining differences.

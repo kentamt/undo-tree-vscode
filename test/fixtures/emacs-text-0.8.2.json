@@ -1,0 +1,225 @@
+[
+  {
+    "name": "single",
+    "text": "x",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 0
+      }
+    ]
+  },
+  {
+    "name": "chain",
+    "text": "o\n|\n|\no\n|\n|\nx",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 0
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "column": 0
+      },
+      {
+        "id": 2,
+        "row": 6,
+        "column": 0
+      }
+    ]
+  },
+  {
+    "name": "odd-with-even-middle",
+    "text": "      o\n  ____|____\n /    |    \\\ns     o     r\n      |\n     / \\\n    o   x",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 6
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "column": 0
+      },
+      {
+        "id": 2,
+        "row": 3,
+        "column": 6
+      },
+      {
+        "id": 3,
+        "row": 3,
+        "column": 12
+      },
+      {
+        "id": 4,
+        "row": 6,
+        "column": 4
+      },
+      {
+        "id": 5,
+        "row": 6,
+        "column": 8
+      }
+    ]
+  },
+  {
+    "name": "nested-even",
+    "text": "                  o\n              ____|\n             /     \\\n            o       o\n    ________|__     |\n   /        |  \\    |\n  o         o   o   o\n  |__\n /   \\\no     o\n      |\n     / \\\n    o   x",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 18
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "column": 12
+      },
+      {
+        "id": 2,
+        "row": 3,
+        "column": 20
+      },
+      {
+        "id": 3,
+        "row": 6,
+        "column": 2
+      },
+      {
+        "id": 4,
+        "row": 6,
+        "column": 12
+      },
+      {
+        "id": 5,
+        "row": 6,
+        "column": 16
+      },
+      {
+        "id": 6,
+        "row": 6,
+        "column": 20
+      },
+      {
+        "id": 7,
+        "row": 9,
+        "column": 0
+      },
+      {
+        "id": 8,
+        "row": 9,
+        "column": 6
+      },
+      {
+        "id": 9,
+        "row": 12,
+        "column": 4
+      },
+      {
+        "id": 10,
+        "row": 12,
+        "column": 8
+      }
+    ]
+  },
+  {
+    "name": "relative-timestamps",
+    "text": "               -1d\n   _____________|_____________\n  /             |             \\\n-1h            -5s            -1m[r]\n             ___|___\n            /       \\\n          -1s      *-0s",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 16
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "column": 1
+      },
+      {
+        "id": 2,
+        "row": 3,
+        "column": 16
+      },
+      {
+        "id": 3,
+        "row": 3,
+        "column": 31
+      },
+      {
+        "id": 4,
+        "row": 6,
+        "column": 11
+      },
+      {
+        "id": 5,
+        "row": 6,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "name": "absolute-timestamps",
+    "text": "                     22:13:20\n      ___________________|___________________\n     /                   |                   \\\n21:13:20             22:13:15             22:12:20[r]\n                    _____|_____\n                   /           \\\n              22:13:19     *22:13:20",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 25
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "column": 4
+      },
+      {
+        "id": 2,
+        "row": 3,
+        "column": 25
+      },
+      {
+        "id": 3,
+        "row": 3,
+        "column": 46
+      },
+      {
+        "id": 4,
+        "row": 6,
+        "column": 18
+      },
+      {
+        "id": 5,
+        "row": 6,
+        "column": 32
+      }
+    ]
+  },
+  {
+    "name": "current-saved",
+    "text": "s",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 0
+      }
+    ]
+  },
+  {
+    "name": "current-register-saved",
+    "text": "z",
+    "positions": [
+      {
+        "id": 0,
+        "row": 0,
+        "column": 0
+      }
+    ]
+  }
+]

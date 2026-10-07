@@ -1,0 +1,402 @@
+[
+  {
+    "name": "single",
+    "root": 0,
+    "current": 0,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "chain",
+    "root": 0,
+    "current": 2,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [
+          1
+        ],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 1,
+        "children": [
+          2
+        ],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 2,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "odd-with-even-middle",
+    "root": 0,
+    "current": 5,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [
+          1,
+          2,
+          3
+        ],
+        "branch": 1,
+        "time": 1699913600000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 1,
+        "children": [],
+        "branch": 0,
+        "time": 1699996400000,
+        "saved": true,
+        "register": null
+      },
+      {
+        "id": 2,
+        "children": [
+          4,
+          5
+        ],
+        "branch": 1,
+        "time": 1699999995000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 3,
+        "children": [],
+        "branch": 0,
+        "time": 1699999940000,
+        "saved": false,
+        "register": "r"
+      },
+      {
+        "id": 4,
+        "children": [],
+        "branch": 0,
+        "time": 1699999999000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 5,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "nested-even",
+    "root": 0,
+    "current": 10,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [
+          1,
+          2
+        ],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 1,
+        "children": [
+          3,
+          4,
+          5
+        ],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 2,
+        "children": [
+          6
+        ],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 3,
+        "children": [
+          7,
+          8
+        ],
+        "branch": 1,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 4,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 5,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 6,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 7,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 8,
+        "children": [
+          9,
+          10
+        ],
+        "branch": 1,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 9,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 10,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "relative-timestamps",
+    "root": 0,
+    "current": 5,
+    "timestamps": true,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [
+          1,
+          2,
+          3
+        ],
+        "branch": 1,
+        "time": 1699913600000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 1,
+        "children": [],
+        "branch": 0,
+        "time": 1699996400000,
+        "saved": true,
+        "register": null
+      },
+      {
+        "id": 2,
+        "children": [
+          4,
+          5
+        ],
+        "branch": 1,
+        "time": 1699999995000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 3,
+        "children": [],
+        "branch": 0,
+        "time": 1699999940000,
+        "saved": false,
+        "register": "r"
+      },
+      {
+        "id": 4,
+        "children": [],
+        "branch": 0,
+        "time": 1699999999000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 5,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "absolute-timestamps",
+    "root": 0,
+    "current": 5,
+    "timestamps": true,
+    "relativeTimestamps": false,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [
+          1,
+          2,
+          3
+        ],
+        "branch": 1,
+        "time": 1699913600000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 1,
+        "children": [],
+        "branch": 0,
+        "time": 1699996400000,
+        "saved": true,
+        "register": null
+      },
+      {
+        "id": 2,
+        "children": [
+          4,
+          5
+        ],
+        "branch": 1,
+        "time": 1699999995000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 3,
+        "children": [],
+        "branch": 0,
+        "time": 1699999940000,
+        "saved": false,
+        "register": "r"
+      },
+      {
+        "id": 4,
+        "children": [],
+        "branch": 0,
+        "time": 1699999999000,
+        "saved": false,
+        "register": null
+      },
+      {
+        "id": 5,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": false,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "current-saved",
+    "root": 0,
+    "current": 0,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": true,
+        "register": null
+      }
+    ]
+  },
+  {
+    "name": "current-register-saved",
+    "root": 0,
+    "current": 0,
+    "timestamps": false,
+    "relativeTimestamps": true,
+    "now": 1700000000000,
+    "nodes": [
+      {
+        "id": 0,
+        "children": [],
+        "branch": 0,
+        "time": 1700000000000,
+        "saved": true,
+        "register": "z"
+      }
+    ]
+  }
+]
