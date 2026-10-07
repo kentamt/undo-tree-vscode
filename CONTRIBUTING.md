@@ -43,7 +43,7 @@ Use synthetic example text. Saved undo history can reconstruct previous document
 
 ## Pull requests
 
-Explain the behavior before and after the change and the validation performed. Keep fixes focused. Update the English/Japanese README and operation reference when public behavior changes.
+Explain the behavior before and after the change and the validation performed. Keep fixes focused. Update the English/Japanese README and usage references when public behavior changes.
 
 For source-compatible changes, identify the upstream function being ported and update [docs/PORTING.md](docs/PORTING.md) if the mapping or adaptation changes. Preserve upstream source files and notices; a reference-version update should be explicit and include provenance, hashes, and regenerated fixtures.
 
